@@ -1,0 +1,35 @@
+version: '3.5'
+
+services:
+
+  ocsen-eureka-server:
+    container_name: ocsen_eureka_server_container
+    image: ocsen-eureka-server:latest
+    ports:
+      - 8761:8761
+      # If you want use devtools
+      # - 8000:8000
+    volumes:
+      - ./ocsen-eureka-server/ocsen:/app
+    networks:
+      - ocsen-microservice-net
+
+  ocsen-zuul-service:
+    container_name: ocsen_zuul_service_container
+    image: ocsen-zuul-service:latest
+    ports:
+      - 8080:8080
+      # If you want use devtools
+      # - 8000:8000
+    volumes:
+      - ./ocsen-zuul-service/ocsen:/app
+    depends_on: 
+      - ocsen-eureka-server
+    links: 
+      - ocsen-eureka-server
+    networks:
+      - ocsen-microservice-net
+
+networks:
+  ocsen-microservice-net:
+    driver: bridge
