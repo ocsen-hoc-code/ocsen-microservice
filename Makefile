@@ -1,8 +1,8 @@
 pull-code:
-	git clone git@github.com:ocsen-hoc-code/ocsen-zuul-service.git
-	git clone git@github.com:ocsen-hoc-code/ocsen-eureka-server.git
-
-default: 
+	chmod +x ./pull.sh
+	./pull.sh
+	
+default: pull-code
 	chmod +x ./build.sh
 	./build.sh
 	# @echo "=============Building Eureka Server============="
