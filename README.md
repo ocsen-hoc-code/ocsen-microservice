@@ -33,8 +33,8 @@ Service Urls:
                        http://127.0.0.1:8081/swagger-ui.html
 
 Github:
-    + https://github.com/ocsen-hoc-code/ocsen-eureka-server
-    + https://github.com/ocsen-hoc-code/ocsen-zuul-service
-    + https://github.com/ocsen-hoc-code/ocsen-user-service
++ https://github.com/ocsen-hoc-code/ocsen-eureka-server
++ https://github.com/ocsen-hoc-code/ocsen-zuul-service
++ https://github.com/ocsen-hoc-code/ocsen-user-service
 
 Linked: https://www.linkedin.com/in/dolambinhminh/
