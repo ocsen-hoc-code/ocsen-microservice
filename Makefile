@@ -5,10 +5,6 @@ pull-code:
 default: pull-code
 	chmod +x ./build.sh
 	./build.sh
-	# @echo "=============Building Eureka Server============="
-	# docker build -f ./ocsen-eureka-server/ocsen/Dockerfile -t ocsen-eureka-server .
-	# @echo "=============Building Zuul Service============="
-	# docker build -f ./ocsen-zuul-service/ocsen/Dockerfile -t ocsen-zuul-service .	
 
 build: default
 	@echo "=============Build And Starting Service Locally============="
@@ -29,7 +25,5 @@ test:
 
 clean: down
 	@echo "=============Cleaning Up============="
-	rm -f ocsen-eureka-server
-	rm -f ocsen-zuul-service
 	docker system prune -f
 	docker volume prune -f
