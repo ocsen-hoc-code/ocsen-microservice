@@ -37,4 +37,4 @@ Warning: If you would like use graylog to write log for system, your cpu have le
 + https://github.com/ocsen-hoc-code/ocsen-zuul-service
 + https://github.com/ocsen-hoc-code/ocsen-user-service
 
-## Linked: https://www.linkedin.com/in/dolambinhminh/
+Linked: https://www.linkedin.com/in/dolambinhminh/
