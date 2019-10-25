@@ -25,12 +25,16 @@ Warning: If you would like use graylog to write log for system, your cpu have le
 
 ## Service Urls:
 
-- Graylog:             http://127.0.0.1:9000/(Username-Password: admin - admin)
-- OcSen Eureka Server: http://127.0.0.1:8761/
-- OcSen Zuul Service:  http://127.0.0.1:8080/
-                       http://127.0.0.1:8080/swagger-ui.html
-- OcSen User Service:  http://127.0.0.1:8081/
-                       http://127.0.0.1:8081/swagger-ui.html
+- Graylog:             
++ http://127.0.0.1:9000/ (Username-Password: admin - admin)
+- OcSen Eureka Server: 
++ http://127.0.0.1:8761/
+- OcSen Zuul Service:  
++ http://127.0.0.1:8080/
++ http://127.0.0.1:8080/swagger-ui.html
+- OcSen User Service:  
++ http://127.0.0.1:8081/
++ http://127.0.0.1:8081/swagger-ui.html
 
 ## Github:
 + https://github.com/ocsen-hoc-code/ocsen-eureka-server
